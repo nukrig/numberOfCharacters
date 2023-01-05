@@ -41,7 +41,7 @@ body{
     transition: all 1s ;
 }
 #character{
-    max-width: 50px;
+    max-width: 80px;
 }
 #button{
     outline: none;

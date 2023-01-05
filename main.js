@@ -25,8 +25,12 @@ function count(text,char){
 }
 
 btn.addEventListener('click', ()=>{
-    let inputValue = text.value
-    let charValue=char.value
+    let inputValue = text.value.toLowerCase()
+    let charValue=char.value.toLowerCase()
+
+    if(charValue.length>1){
+        alert('Enter only One Character!')
+    }
     if(!inputValue || !charValue){
         alert('Empty Value Provided')
         return
